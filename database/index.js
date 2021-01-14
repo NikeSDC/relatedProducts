@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/relatedItems', {useNewUrlParser: true, useUnifiedTopology: true})
-  .then(() => {console.log('Connected to mongoose')})
-  .catch((err) => {console.log(err)})
+
+mongoose.connect('mongodb://localhost/relatedItems', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => { console.log('Connected to mongoose'); })
+  .catch((err) => { console.log(err); });
 
 const shoeDescriptionSchema = new mongoose.Schema({
   brand: String,
@@ -15,8 +16,8 @@ const shoeDescriptionSchema = new mongoose.Schema({
   media: {
     imageUrl: String,
     smallImageUrl: String,
-    thumbUrl: String
-  }
+    thumbUrl: String,
+  },
 });
 
 const shoeDescription = mongoose.model('shoeDescription', shoeDescriptionSchema);

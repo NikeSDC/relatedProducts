@@ -1,3 +1,4 @@
+/* eslint-disable */
 const axios = require('axios');
 var MockAdapter = require("axios-mock-adapter");
 const exampleGetResponse = require('./exampleData.js');
@@ -23,5 +24,4 @@ test('Get request is recieving results when called', () => {
       expect(result.data.data.length).toEqual(100);
     })
     .catch((err) => {console.log(err)})
-
 })

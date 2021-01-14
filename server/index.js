@@ -10,21 +10,23 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../client/public')))
 
 
-app.get('/db', (req, res) => {
+app.get('/relatedProducts/db', (req, res) => {
   db.find({})
     .then((result) => {res.status(200).send(result)})
     .catch((err) => {res.status(400).send(err)})
 })
 
 
-app.post('/db', (req, res) => {
-  db.create(req.body)
-    .then((result) => {res.status(200).send(result)})
-    .catch((err) => {res.status(400).send(err)})
-})
+// app.post('/db', (req, res) => {
+//   db.create(req.body)
+//     .then((result) => {res.status(200).send(result)})
+//     .catch((err) => {res.status(400).send(err)})
+// })
 
 
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+module.exports = app;

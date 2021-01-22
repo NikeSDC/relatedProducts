@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Slider from './components/Slider.jsx'; // eslint-disable-line
 
-ReactDom.render(<Slider />, document.getElementById('app'));
+import Main from './components/Main.jsx'; // eslint-disable-line
+
+ReactDom.render(<Main />, document.getElementById('app'));

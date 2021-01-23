@@ -130,7 +130,7 @@ button {
 
 .sliderContainer {
   /* background-color: blue; */
-  height: 75vh;
+  height: 90vh;
   width: 100vw;
 }
 
@@ -139,7 +139,7 @@ button {
   width: 95vw;
   text-align: center;
   overflow: hidden;
-  /* background-color: orange; */
+  /* background-color: blue; */
   margin-top: 25px;
   position: absolute;
   left: 2.5%;
@@ -152,11 +152,13 @@ button {
 .relatedItem {
   display: flex;
   flex-direction: column;
+
 }
 
 .image {
   /* background-color: pink; */
-  height: 89%;
+  background-color: white;
+  height: 87%;
   width: 100%;
   overflow: hidden;
 }
@@ -168,13 +170,15 @@ button {
 }
 
 .info {
-  background-color: white;
-  height: 12%;
+  /* background-color: orange; */
+  height: 15%;
   width: 100%;
   text-align: left;
   font-size: 16px;
   padding-top: 2%;
-  padding-left: 1%;
+  padding-left: 2%;
+  font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+  background-color: white;
 }
 
  .shoeName {
@@ -182,11 +186,22 @@ button {
 }
 
 .category {
+  padding-top: 4px;
   color: rgb(117, 117, 117);
+  padding-bottom: 14px;
+}
+
+@media only screen and (max-height: 800px) {
+  .category {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .price {
-  padding-top: 10px;
+  margin-top: 50px;
+  font-weight: 600;
+  display: inline;
 }
 
 .slides {
@@ -201,10 +216,10 @@ button {
   scroll-snap-type: mandatory;
   */
 }
-/* .slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+.slides::-webkit-scrollbar {
+  display: none;
 }
+/*
 .slides::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
@@ -297,7 +312,7 @@ img {
 #sliderRightArrow {
   position: absolute;
   top: 50%;
-  right: 40px;
+  right: 45px;
   z-index: 100;
 }
 
@@ -352,5 +367,11 @@ img {
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
+}
 
+.originalPrice {
+  display: inline;
+  padding-left: 8px;
+  text-decoration: line-through;
+  color: rgb(141, 141, 141);
 }

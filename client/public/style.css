@@ -130,7 +130,7 @@ button {
 
 .sliderContainer {
   /* background-color: blue; */
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
 }
 
@@ -373,5 +373,23 @@ img {
   display: inline;
   padding-left: 8px;
   text-decoration: line-through;
-  color: rgb(141, 141, 141);
+  color: grey;
+}
+
+
+#scrollbarContainer {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 93%;
+  height: 2px;
+  background-color: lightgrey;
+}
+
+#scrollbar {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  background-color: black;
 }

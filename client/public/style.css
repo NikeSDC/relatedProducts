@@ -309,19 +309,60 @@ img {
   font-family: 'Ropa Sans', sans-serif;
 } */
 
-#sliderRightArrow {
+.sliderArrowButtonLeft {
   position: absolute;
-  top: 50%;
-  right: 45px;
-  z-index: 100;
+  top: 60%;
+  left: 30px;
+  border-radius: 20px;
+  background-color: rgb(240,240,240);
+  height: 35px;
+  width: 35px;
+  z-index: 5;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+
+.sliderArrowButtonLeft:hover {
+  background-color: white;
+}
+
+.sliderArrowButtonRight:hover {
+  background-color: white;
 }
 
 #sliderLeftArrow {
-  position: absolute;
-  left: 20px;
-  top: 50%;
+  position: relative;
+  margin: auto;
   z-index: 100;
 }
+
+.sliderArrowButtonRight {
+  position: absolute;
+  top: 60%;
+  right: 45px;
+  border-radius: 20px;
+  background-color: rgb(240,240,240);
+  height: 35px;
+  width: 35px;
+  z-index: 5;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#sliderRightArrow {
+  position: relative;
+  margin: auto;
+  z-index: 100;
+}
+
+
 
 .exploreText {
   max-width: 44vw;
@@ -389,7 +430,14 @@ img {
 
 #scrollbar {
   position: relative;
-  width: 10%;
+  width: 25%;
   height: 100%;
   background-color: black;
+  transform: translateX(0) rotate(0deg);
+  transition: all .5s ease;
 }
+
+
+
+
+

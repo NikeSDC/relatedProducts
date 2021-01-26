@@ -437,7 +437,97 @@ img {
   transition: all .5s ease;
 }
 
+.footerContainer {
+  position: relative;
+  margin-top: 65px;
+  background-color: #111;
+  width: 100%;
+  height: 30vh;
+}
+
+.footerContent {
+  display: flex;
+  position: absolute;
+  width: 75%;
+  height: 86%;
+  /* background-color: blue; */
+  color: white;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+
+
+}
+
+
+.footerFirstCollumn {
+  width:15%;
+  height: 100%;
+}
+
+
+.footerHelp {
+  color: white;
+  width:15%;
+  height: 100%;
+}
 
 
 
+.footerAbout {
+  color: white;
+  width:15%;
+  height: 100%;
+  /* background-color: green; */
+}
 
+.footerRight {
+  width: 55%;
+  height: 100%;
+  /* background-color: orange; */
+}
+
+.footerSocialMedia {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-link-icon {
+  fill: grey;
+}
+
+.footerLinkBold {
+  color: white;
+  font-family: "Nike TG","Helvetica Neue","Helvetica","Arial","sans-serif";
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: 14px;
+}
+
+.footerLink {
+  color: grey;
+  font-size: 12px;
+  line-height: 2;
+  font-family: "Nike TG","Helvetica Neue","Helvetica","Arial","sans-serif";
+  font-weight: 400;
+}
+
+.footerListItem {
+  padding-bottom: 5px;
+}
+
+.footerCollumnOne {
+  padding-bottom: 15px;
+}
+.socialMediaIcon {
+  margin-right: 15px;
+}

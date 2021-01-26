@@ -33,19 +33,18 @@ class Slider extends React.Component {
 
   handleClick(event) {
     const { left, right, scrollMargin } = this.state;
-    console.log(`This is the event id: ${event.target.id}`)
     if (( event.target.id === 'sliderLeftArrowSVG' || event.target.id === 'sliderLeftArrowPath' ) && left > 0) {
       this.setState({
         left: left - 1,
         right: right - 1,
         scrollMargin: scrollMargin - 1,
-      }, () => {console.log(`Left: ${this.state.left} Right: ${this.state.right}`)}); // eslint-disable-line
+      }, () => {}); // eslint-disable-line
     } else if ((event.target.id === 'sliderRightArrowSVG' || event.target.id === 'sliderRightArrowPath' ) && right < this.state.relatedItems.length - 1) {
       this.setState({
         left: left + 1,
         right: right + 1,
         scrollMargin: scrollMargin + 1,
-      }, () => {console.log(`Left: ${this.state.left} Right: ${this.state.right}`)}) // eslint-disable-line
+      }, () => {}) // eslint-disable-line
     } else {
       console.log(`Out of range: Left: ${this.state.left} Right: ${this.state.right}`);
     }

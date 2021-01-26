@@ -6,18 +6,12 @@ mongoose.connect('mongodb://localhost/relatedItems', { useNewUrlParser: true, us
 
 const shoeDescriptionSchema = new mongoose.Schema({
   brand: String,
-  colorway: String,
-  gender: String,
-  name: String,
+  type: { type: String, default: 'Basketball Shoe' },
   retailPrice: { type: Number, default: 200 },
   currentPrice: { type: Number, default: null },
-  shoe: String,
   title: String,
-  year: Number,
   media: {
-    imageUrl: String,
     smallImageUrl: String,
-    thumbUrl: String,
   },
 });
 

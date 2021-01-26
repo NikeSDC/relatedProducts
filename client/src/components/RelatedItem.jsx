@@ -11,7 +11,7 @@ const RelatedItem = (props) => {
         </div>
         <div className="info">
           <div className="shoeName">{props.relatedItem.title}</div>
-          <div className="category">Basketball Shoe</div>
+          <div className="category">{props.relatedItem.type}</div>
           <div className="price">{`$${props.relatedItem.currentPrice}`}</div>
           <span className="originalPrice">{`$${props.relatedItem.retailPrice}`}</span>
         </div>

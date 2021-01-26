@@ -1,6 +1,5 @@
 /* eslint-disable */
 
-
 body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -444,7 +443,7 @@ img {
 
 .footerLinkBold {
   color: white;
-  font-family: "Nike TG","Helvetica Neue","Helvetica","Arial","sans-serif";
+  font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
   font-weight: 600;
   letter-spacing: .5px;
   font-size: 14px;

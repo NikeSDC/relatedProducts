@@ -21,7 +21,7 @@ class Slider extends React.Component {
 
 
   componentDidMount() {
-    axios.get('http://localhost:3000/relatedProducts/db')
+    axios.get('/api/relatedProducts/db')
       .then((result) => {
         let products = result.data.slice(0, 11);
         this.setState({

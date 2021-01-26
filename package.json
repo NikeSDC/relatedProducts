@@ -25,6 +25,7 @@
     "axios": "^0.21.1",
     "axios-mock-adapter": "^1.19.0",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
     "express": "^4.17.1",
     "jest": "^26.6.3",
     "mongoose": "^5.11.11",
@@ -33,6 +34,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-multi-carousel": "^2.6.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.13.0"
   },
   "devDependencies": {

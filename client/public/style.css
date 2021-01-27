@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-/* body, html {
+ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,25 +36,27 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-a {
+
+ a {
   color: #111;
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
 }
-div {
-  display: block;
-}
+
+
+
 li {
     text-align: -webkit-match-parent;
 }
 ul {
   display: block;
 }
+
 ol, ul {
   list-style: none;
-} */
-/* input {
+}
+ /* input {
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
   color: -internal-light-dark(black, white);
@@ -76,8 +78,8 @@ ol, ul {
   border-style: inset;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
-} */
-/* button {
+}
+ button {
     appearance: button;
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
@@ -101,7 +103,7 @@ ol, ul {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
 } */
-/* ::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
   color:#d1d1d1;
 }
 :-ms-input-placeholder {
@@ -113,7 +115,7 @@ ol, ul {
 :after, :before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  } */
+  }
 
 
 /* END OF NIKE STYLE SHEET */
@@ -378,11 +380,18 @@ ol, ul {
   margin-top: 65px;
   background-color: #111;
   width: 100%;
-  height: 30vh;
+  height: 350px;
+  min-height: 350px;
+}
+
+.footerInner {
+  display: flex;
+  height: 80%;
+  /* background-color: slategrey; */
 }
 
 .footerContent {
-  display: flex;
+  /* display: flex; */
   position: absolute;
   width: 75%;
   height: 86%;
@@ -396,15 +405,24 @@ ol, ul {
   flex-direction: row;
 }
 
+.footerBottom {
+  position: relative;
+  width: 10%;
+  height: 20%;
+  border-top: 1px solid rgb(83, 83, 83);
+}
+
 .footerFirstCollumn {
   width:15%;
   height: 100%;
+  /* background-color: red; */
 }
 
 .footerHelp {
   color: white;
   width:15%;
   height: 100%;
+  /* background-color: pink; */
 }
 
 .footerAbout {
@@ -429,6 +447,12 @@ ol, ul {
   /* background-color: skyblue; */
   display: flex;
   justify-content: flex-end;
+}
+
+.footerBottom {
+  height: 15%;
+  width: 100%;
+  /* background-color: slateblue; */
 }
 
 .social-link-icon {
@@ -460,4 +484,48 @@ ol, ul {
 }
 .socialMediaIcon {
   margin-right: 15px;
+}
+
+.footerLocation {
+  position: absolute;
+  display: flex;
+  font-size: 10px;
+  bottom: 10px;
+}
+
+.footerLocationATag {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footerLocationSVG {
+  fill: white;
+  margin-right: 5px;
+}
+
+.countryLabel {
+  color: white;
+}
+
+.footerCopyRight {
+  margin-top: 5px;
+  color: grey;
+}
+
+.footerBottomRight {
+  position: absolute;
+  height: 50%;
+  width: 40%;
+  right: 0;
+  bottom: 0;
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footerBottomText {
+  font-size: 10px;
+  color: grey;
+  margin-right: 35px;
+  margin-bottom: 7px;
 }

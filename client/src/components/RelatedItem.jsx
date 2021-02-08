@@ -3,17 +3,17 @@ import React from 'react';
 
 const RelatedItem = (props) => {
   // On sale
-  if (props.relatedItem.currentPrice) {
+  if (props.relatedItem.currentprice) {
     return (
       <div className="relatedItem" id={`slide-${props.count}`}>
         <div className="image">
-          <img src={props.relatedItem.media.smallImageUrl} ></img>
+          <img src={props.relatedItem.smallimageurl} ></img>
         </div>
         <div className="info">
           <div className="shoeName">{props.relatedItem.title}</div>
           <div className="category">{props.relatedItem.type}</div>
-          <div className="price">{`$${props.relatedItem.currentPrice}`}</div>
-          <span className="originalPrice">{`$${props.relatedItem.retailPrice}`}</span>
+          <div className="price">{`$${props.relatedItem.currentprice}`}</div>
+          <span className="originalPrice">{`$${props.relatedItem.retailprice}`}</span>
         </div>
       </div>
     )
@@ -22,12 +22,12 @@ const RelatedItem = (props) => {
     return (
       <div className="relatedItem" id={`slide-${props.count}`}>
         <div className="image">
-          <img src={props.relatedItem.media.smallImageUrl} ></img>
+          <img src={props.relatedItem.smallimageurl} ></img>
         </div>
         <div className="info">
           <div className="shoeName">{props.relatedItem.title}</div>
           <div className="category">Basketball Shoe</div>
-          <div className="price">{`$${props.relatedItem.retailPrice}`}</div>
+          <div className="price">{`$${props.relatedItem.retailprice}`}</div>
         </div>
       </div>
     )

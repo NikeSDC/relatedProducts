@@ -21,11 +21,12 @@
 
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: 'gregorie6112',
-  password: '',
-  host: 'localhost',
-  database: 'relatedItems',
+  user: 'gregorie2',
+  password: 'gregcal1',
+  host: '54.176.16.86',
+  database: 'relateditems',
   port: 5432,
 })
+console.log(pool);
 
 module.exports = pool;
